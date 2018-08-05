@@ -1,0 +1,146 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #ffefd5;
+    margin:0;
+    padding:0;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #14c0c9;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+.block-center,
+section .container,
+#skills i
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.abel,
+section h2,
+#skills h3,
+{
+    font-family: 'Abel', sans-serif;
+}
+
+.uppercase,
+section h2,
+#skills h3,
+{
+    text-transform: uppercase;
+}
+
+header
+{
+    background-image:url(../images/Beach.jpg);
+    clear: both;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /*　画面サイズ 499pxから適用　*/
+    header {
+        height: 250px;
+    }
+}
+        
+section
+{
+    padding: 60px 0;
+}
+section .container
+{
+    width: 90%;
+}
+section h2
+{
+    font-size: 3.2rem;
+}
+#skills .box
+{
+    background-color: #2ed0e6;
+}
+#skills .container
+{
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+}
+#skills h2
+{
+    margin-bottom: 60px;
+    color: #666666;
+}
+
+#skills h3
+{
+    background-color: #a1dde6;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #666666;
+}
+@media screen and (max-width: 768px) {
+  /*　画面サイズ 499pxから適用　*/
+  #skills .container {
+    flex-direction: column;
+  }
+  #skills .box {
+    margin:10px auto;
+  }
+}
+
+footer
+{
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #2ed0e6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer button
+{
+    width: 170px;
+    margin: 10px auto;
+    padding: 15px 0;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    background: #008DDD;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;/* for Safari and Chrome 対応*/
+    -moz-border-radius: 5px;/* for Firefox 対応*/
+}
+
