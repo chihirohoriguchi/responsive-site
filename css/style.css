@@ -30,6 +30,10 @@ a
 {
     text-align: center;
 }
+p
+{
+    text-align: center;
+}
 
 .block-center,
 section .container,
@@ -87,6 +91,9 @@ section h2
 #skills .box
 {
     background-color: #2ed0e6;
+    margin: 10px auto;
+    padding: 0;
+    width:31%;
 }
 #skills .container
 {
@@ -113,9 +120,11 @@ section h2
   /*　画面サイズ 499pxから適用　*/
   #skills .container {
     flex-direction: column;
+    
   }
   #skills .box {
     margin:10px auto;
+    width:100%;
   }
 }
 
